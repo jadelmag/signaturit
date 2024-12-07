@@ -1,0 +1,18 @@
+.custom-button-stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .custom-button {
+    
+    &__disabled {
+      background-color: #adadad !important;
+      color: #444444 !important;
+      opacity: 0.8 !important;
+      pointer-events: unset !important;
+      cursor: not-allowed !important;
+    }
+  }
+
+}

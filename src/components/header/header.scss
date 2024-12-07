@@ -1,0 +1,46 @@
+@use "../../sass/mixins" as *;
+
+.custom-header {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  padding: 0px 16px;
+
+  &__title {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+
+  &__links {
+    display: flex;
+
+    &--active {
+      font-weight: 600 !important;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.75;
+      letter-spacing: 0.02857em;
+      text-transform: uppercase;
+      margin-left: 8px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  @include sm {
+    &__title {
+      font-size: 18px !important;
+    font-weight: 700 !important;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.upload-document {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  height: auto;
+  padding: 20px;
+}

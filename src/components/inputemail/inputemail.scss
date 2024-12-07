@@ -1,0 +1,49 @@
+.custom-input-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  .custom-input-email-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    input {
+      width: 60%;
+      height: 28px;
+      border-radius: 4px;
+      margin: 8px 0px;
+      text-indent: 8px;
+
+      &:focus-visible {
+        outline: none !important;
+      }
+    }
+
+    .remove-icon {
+      margin-left: 8px;
+      cursor: pointer;
+  
+      svg {
+        path {
+          fill: #ef5a6f !important;
+        }
+        &:hover {
+          opacity: 0.6 !important;
+        }
+      }
+    }
+  }
+
+  .email-error {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ef5a6f;
+    font-size: 12px;
+    margin: 4px 0px;
+  }
+}
